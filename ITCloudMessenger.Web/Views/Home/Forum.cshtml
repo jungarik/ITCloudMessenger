@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Forum";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">User:</div>
+        <div class="col-6">
+            <input class="input-sm" type="text" id="userInput" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">Message:</div>
+        <div class="col-6">
+            <input class="input-sm" type="text" id="messageInput" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-offset-6"></div>
+        <div class="col-6">
+            <input class="btn btn-default" type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/lib/moment/moment.js"></script>
+<script src="~/js/messenger.js"></script>
